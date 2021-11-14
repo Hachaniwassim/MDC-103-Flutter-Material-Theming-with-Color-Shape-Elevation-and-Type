@@ -26,25 +26,24 @@ ThemeData _buildShrineTheme() {
   final ThemeData base = ThemeData.light();
   return base.copyWith(
     colorScheme: base.colorScheme.copyWith(
-      primary: kShrinePink100,
-      onPrimary: kShrineBrown900,
-      secondary: kShrineBrown900,
+      primary: kShrinePurple,
+      secondary: kShrinePurple,
       error: kShrineErrorRed,
-      
     ),
-    // TODO: Add the text themes (103)
-    // TODO: Add the icon themes (103)
-    // TODO: Decorate the inputs (103)
-
+    scaffoldBackgroundColor: kShrineSurfaceWhite,
+    textTheme: _buildShrineTextTheme(base.textTheme),
+    textSelectionTheme: const TextSelectionThemeData(
+      selectionColor: kShrinePurple,
+    ),
     inputDecorationTheme: const InputDecorationTheme(
-  focusedBorder: CutCornersBorder(
-    borderSide: BorderSide(
-      width: 2.0,
-      color: kShrineBrown900,
+      focusedBorder: CutCornersBorder(
+        borderSide: BorderSide(
+          width: 2.0,
+          color: kShrinePurple,
+        ),
+      ),
+      border: CutCornersBorder(),
     ),
-  ),
-  border: CutCornersBorder(), // Replace code
-),
   );
 }
 // TODO: Build a Shrine Text Theme (103)
