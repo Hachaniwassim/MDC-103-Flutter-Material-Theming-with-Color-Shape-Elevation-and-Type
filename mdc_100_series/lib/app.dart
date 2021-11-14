@@ -35,15 +35,16 @@ ThemeData _buildShrineTheme() {
     // TODO: Add the text themes (103)
     // TODO: Add the icon themes (103)
     // TODO: Decorate the inputs (103)
-      inputDecorationTheme: const InputDecorationTheme(
-    focusedBorder: CutCornersBorder(
-      borderSide: BorderSide(
-        width: 2.0,
-        color: kShrineBrown900,
-      ),
+
+    inputDecorationTheme: const InputDecorationTheme(
+  focusedBorder: CutCornersBorder(
+    borderSide: BorderSide(
+      width: 2.0,
+      color: kShrineBrown900,
     ),
-    border: CutCornersBorder(), // Replace code
   ),
+  border: CutCornersBorder(), // Replace code
+),
   );
 }
 // TODO: Build a Shrine Text Theme (103)
