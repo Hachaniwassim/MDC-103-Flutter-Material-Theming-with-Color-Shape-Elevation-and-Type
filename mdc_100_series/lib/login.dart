@@ -48,17 +48,16 @@ class _LoginPageState extends State<LoginPage> {
             // TODO: Remove filled: true values (103)
             TextField(
               controller: _usernameController,
-              decoration: const InputDecoration(
-                filled: true,
+              decoration: InputDecoration(
+                // Removed filled: true
                 labelText: 'Username',
               ),
             ),
             const SizedBox(height: 12.0),
-            // TODO: Wrap Password with AccentColorOverride (103)
             TextField(
               controller: _passwordController,
-              decoration: const InputDecoration(
-                filled: true,
+              decoration: InputDecoration(
+                // Removed filled: true
                 labelText: 'Password',
               ),
               obscureText: true,
